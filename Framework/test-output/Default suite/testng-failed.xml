@@ -5,8 +5,8 @@
     <classes>
       <class name="org.com.ObjectMainMobile.MobileTestMainClass">
         <methods>
-          <include name="runTest1"/>
-          <include name="beforeTest"/>
+          <include name="validateProductAddAndRemoveProductInCart"/>
+          <include name="loginToApplicationValidateHomePage"/>
           <include name="afterMethod"/>
           <include name="afterSuite"/>
           <include name="before"/>

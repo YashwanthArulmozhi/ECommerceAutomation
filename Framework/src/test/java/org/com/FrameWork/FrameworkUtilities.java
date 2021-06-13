@@ -20,6 +20,7 @@ import org.testng.annotations.BeforeSuite;
 
 import com.aventstack.extentreports.ExtentReports;
 import com.aventstack.extentreports.ExtentTest;
+import com.aventstack.extentreports.Status;
 import com.aventstack.extentreports.reporter.ExtentHtmlReporter;
 import com.aventstack.extentreports.reporter.configuration.Theme;
 
@@ -143,18 +144,6 @@ public static ExtentHtmlReporter htmlReporter;
 		}
 	}
 	
-	@BeforeMethod
-	public void beforeTest()
-	{
-		try
-		{
-			System.out.println("");
-		}
-		catch (Exception e) {
-			System.out.println(e.getMessage());
-		}
-	}
-	
 	public void setDesciption(String Description)
 	{
 		logger=extent.createTest(Description);
@@ -167,11 +156,11 @@ public static ExtentHtmlReporter htmlReporter;
 	@AfterMethod
 	public void afterMethod(ITestResult result) throws HeadlessException, IOException, AWTException
 	{
-		String screenshotPAth = System.getProperty("user.dir")+"\\Output\\Screenshots\\Image"+new SimpleDateFormat("MM_dd_YYYY_HH_mm_ss").format(new Date());
+		String screenshotPAth = System.getProperty("user.dir")+"\\Output\\Screenshots\\Image"+new SimpleDateFormat("MM_dd_YYYY_HH_mm_ss").format(new Date())+".png";
 		if(result.getStatus() == ITestResult.FAILURE)
 		{
-			//logger.addScreenCaptureFromPath(commonMethods.getScreenshot(screenshotPAth));
-			logger.fail("Test Case Failed");
+			logger.addScreenCaptureFromPath(commonMethods.getScreenshotSelenium(screenshotPAth));
+			logger.fail(result.getThrowable().getMessage());
 		}
 	}
 	

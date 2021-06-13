@@ -40,33 +40,16 @@ import org.testng.Reporter;
 public class BrowserAndDriverClass extends FrameworkUtilities {
 	
 	
-	public static WebDriver driver;
+	public WebDriver driver;
 	
 
-	
-	
-	
-	
-	/*public WebDriver callBowser()
-	{
-		try
-		{
-			initDriver(getBrowserName());
-			return driver;
-		}
-		catch (Exception e) {
-			System.out.println(e.getMessage());
-		}
-		return driver;
-	}*/
-	
+
 	public WebDriver initDriver(String browserName)
 	{
 		try
 		{
 			if(browserName.equalsIgnoreCase("chrome"))
 			{
-				System.setProperty("webdriver.chrome.driver","C:\\Users\\admin\\Downloads\\FrameWork - Selenium\\chromedriver_win32\\chromedriver.exe");
 				WebDriverManager.chromedriver().setup();
 				driver = new ChromeDriver();
 				driver.manage().window().maximize();
