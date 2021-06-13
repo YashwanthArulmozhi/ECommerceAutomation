@@ -1,17 +1,16 @@
-package org.com.ObjectMainMobile;
+package org.com.TestPackage;
 
-import org.com.FrameWork.BrowserAndDriverClass;
 import org.com.FrameWork.FrameworkUtilities;
 import org.com.FrameWork.InitCommonMethods;
-import org.com.ObjectRepo.Pages.LoginPage;
 import org.com.ObjectRepo.Pages.CheckOutComplete;
 import org.com.ObjectRepo.Pages.CheckOutInformationPage;
 import org.com.ObjectRepo.Pages.CheckOutOverViewPage;
 import org.com.ObjectRepo.Pages.HomePage;
+import org.com.ObjectRepo.Pages.LoginPage;
 import org.com.ObjectRepo.Pages.YourCartPage;
 import org.testng.annotations.Test;
 
-public class MobileTestMainClass extends FrameworkUtilities implements InitCommonMethods
+public class TestMainClass extends FrameworkUtilities implements InitCommonMethods
 {
 	LoginPage loginPage = new LoginPage();
 	HomePage homePage = new HomePage();

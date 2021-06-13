@@ -23,10 +23,6 @@ public class LoginPage extends FrameworkUtilities implements InitCommonMethods {
 	private final By label_ErrorMsg = By.xpath("//h3[@data-test='error']");
 	
 	
-	String url = commonMethods.readExcelData("Ecommerce", "URL");
-	String userName = commonMethods.readExcelData("Ecommerce", "UserName");
-	String password = commonMethods.readExcelData("Ecommerce", "ValidPassword");
-	
 	
 	/**
 	 * Method to Login an application with URL and Login Credentials
