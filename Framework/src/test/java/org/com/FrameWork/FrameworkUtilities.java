@@ -130,12 +130,12 @@ public static ExtentHtmlReporter htmlReporter;
 				reportName =  new SimpleDateFormat("MM_dd_YYYY_HH_mm_ss").format(new Date());
 				path = System.getProperty("user.dir")+"\\Output\\Report"+reportName+".html";
 			}
-			String app = getApplicationName();
+			String applicationName = getApplicationName();
 			htmlReporter = new ExtentHtmlReporter(path);
 			extent = new ExtentReports();
 			extent.attachReporter(htmlReporter);
 			htmlReporter.config().setDocumentTitle(getApplicationName());
-			htmlReporter.config().setReportName(app);
+			htmlReporter.config().setReportName(applicationName);
 			htmlReporter.config().setTheme(Theme.DARK);
 			//
 		}
@@ -144,7 +144,7 @@ public static ExtentHtmlReporter htmlReporter;
 		}
 	}
 	
-	public void setDesciption(String Description)
+	public void setDescription(String Description)
 	{
 		logger=extent.createTest(Description);
 	}

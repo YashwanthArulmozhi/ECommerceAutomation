@@ -28,6 +28,9 @@ public class YourCartPage extends FrameworkUtilities implements InitCommonMethod
 	
 	
 	
+	/**
+	 * Method to click on checkout button
+	 */
 	public void clickCheckOut()
 	{
 		try
@@ -41,6 +44,9 @@ public class YourCartPage extends FrameworkUtilities implements InitCommonMethod
 		}
 	}
 	
+	/**
+	 * Method to validate Checkout items of the product displayed correctly
+	 */
 	public void validateCheckOutItems()
 	{
 		try
@@ -69,6 +75,9 @@ public class YourCartPage extends FrameworkUtilities implements InitCommonMethod
 		}
 	}
 		
+		/**
+		 * Method to remove Product 2 from cart
+		 */
 		public void removeItemAndValidate()
 		{
 			try

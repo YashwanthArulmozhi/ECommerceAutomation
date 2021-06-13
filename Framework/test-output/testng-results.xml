@@ -2,72 +2,72 @@
 <testng-results skipped="0" failed="0" ignored="0" total="3" passed="3">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="14555" started-at="2021-06-13T05:34:18Z" finished-at="2021-06-13T05:34:32Z">
+  <suite name="Default suite" duration-ms="33777" started-at="2021-06-13T15:27:50Z" finished-at="2021-06-13T15:28:24Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="14555" started-at="2021-06-13T05:34:18Z" finished-at="2021-06-13T05:34:32Z">
-      <class name="org.com.ObjectMainMobile.MobileTestMainClass">
-        <test-method status="PASS" signature="before(org.testng.ITestContext)[pri:0, instance:org.com.ObjectMainMobile.MobileTestMainClass@5d0a1059]" name="before" is-config="true" duration-ms="184" started-at="2021-06-13T05:34:18Z" finished-at="2021-06-13T05:34:18Z">
+    <test name="Default test" duration-ms="33777" started-at="2021-06-13T15:27:50Z" finished-at="2021-06-13T15:28:24Z">
+      <class name="org.com.TestPackage.TestMainClass">
+        <test-method status="PASS" signature="before(org.testng.ITestContext)[pri:0, instance:org.com.TestPackage.TestMainClass@1a18644]" name="before" is-config="true" duration-ms="443" started-at="2021-06-13T15:27:50Z" finished-at="2021-06-13T15:27:50Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[org.testng.TestRunner@14b0e127]]>
+                <![CDATA[org.testng.TestRunner@5ea4300e]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- before -->
-        <test-method status="PASS" signature="validateErrorMsgForInvalidPassword()[pri:0, instance:org.com.ObjectMainMobile.MobileTestMainClass@5d0a1059]" name="validateErrorMsgForInvalidPassword" duration-ms="8694" started-at="2021-06-13T05:34:18Z" finished-at="2021-06-13T05:34:26Z">
+        <test-method status="PASS" signature="validateErrorMsgForInvalidPassword()[pri:0, instance:org.com.TestPackage.TestMainClass@1a18644]" name="validateErrorMsgForInvalidPassword" duration-ms="22792" started-at="2021-06-13T15:27:50Z" finished-at="2021-06-13T15:28:13Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- validateErrorMsgForInvalidPassword -->
-        <test-method status="PASS" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:org.com.ObjectMainMobile.MobileTestMainClass@5d0a1059]" name="afterMethod" is-config="true" duration-ms="0" started-at="2021-06-13T05:34:26Z" finished-at="2021-06-13T05:34:26Z">
+        <test-method status="PASS" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:org.com.TestPackage.TestMainClass@1a18644]" name="afterMethod" is-config="true" duration-ms="1" started-at="2021-06-13T15:28:13Z" finished-at="2021-06-13T15:28:13Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=validateErrorMsgForInvalidPassword status=SUCCESS method=MobileTestMainClass.validateErrorMsgForInvalidPassword()[pri:0, instance:org.com.ObjectMainMobile.MobileTestMainClass@5d0a1059] output={null}]]]>
+                <![CDATA[[TestResult name=validateErrorMsgForInvalidPassword status=SUCCESS method=TestMainClass.validateErrorMsgForInvalidPassword()[pri:0, instance:org.com.TestPackage.TestMainClass@1a18644] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterMethod -->
-        <test-method status="PASS" signature="validateProductAddAndRemoveProductInCart()[pri:1, instance:org.com.ObjectMainMobile.MobileTestMainClass@5d0a1059]" name="validateProductAddAndRemoveProductInCart" duration-ms="2551" started-at="2021-06-13T05:34:26Z" finished-at="2021-06-13T05:34:29Z">
+        <test-method status="PASS" signature="validateProductAddAndRemoveProductInCart()[pri:1, instance:org.com.TestPackage.TestMainClass@1a18644]" name="validateProductAddAndRemoveProductInCart" duration-ms="5356" started-at="2021-06-13T15:28:13Z" finished-at="2021-06-13T15:28:18Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- validateProductAddAndRemoveProductInCart -->
-        <test-method status="PASS" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:org.com.ObjectMainMobile.MobileTestMainClass@5d0a1059]" name="afterMethod" is-config="true" duration-ms="1" started-at="2021-06-13T05:34:29Z" finished-at="2021-06-13T05:34:29Z">
+        <test-method status="PASS" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:org.com.TestPackage.TestMainClass@1a18644]" name="afterMethod" is-config="true" duration-ms="1" started-at="2021-06-13T15:28:18Z" finished-at="2021-06-13T15:28:18Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=validateProductAddAndRemoveProductInCart status=SUCCESS method=MobileTestMainClass.validateProductAddAndRemoveProductInCart()[pri:1, instance:org.com.ObjectMainMobile.MobileTestMainClass@5d0a1059] output={null}]]]>
+                <![CDATA[[TestResult name=validateProductAddAndRemoveProductInCart status=SUCCESS method=TestMainClass.validateProductAddAndRemoveProductInCart()[pri:1, instance:org.com.TestPackage.TestMainClass@1a18644] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterMethod -->
-        <test-method status="PASS" signature="loginToApplicationValidateHomePage()[pri:2, instance:org.com.ObjectMainMobile.MobileTestMainClass@5d0a1059]" name="loginToApplicationValidateHomePage" duration-ms="3262" started-at="2021-06-13T05:34:29Z" finished-at="2021-06-13T05:34:32Z">
+        <test-method status="PASS" signature="loginToApplicationValidateHomePage()[pri:2, instance:org.com.TestPackage.TestMainClass@1a18644]" name="loginToApplicationValidateHomePage" duration-ms="5587" started-at="2021-06-13T15:28:18Z" finished-at="2021-06-13T15:28:24Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- loginToApplicationValidateHomePage -->
-        <test-method status="PASS" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:org.com.ObjectMainMobile.MobileTestMainClass@5d0a1059]" name="afterMethod" is-config="true" duration-ms="0" started-at="2021-06-13T05:34:32Z" finished-at="2021-06-13T05:34:32Z">
+        <test-method status="PASS" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:org.com.TestPackage.TestMainClass@1a18644]" name="afterMethod" is-config="true" duration-ms="0" started-at="2021-06-13T15:28:24Z" finished-at="2021-06-13T15:28:24Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=loginToApplicationValidateHomePage status=SUCCESS method=MobileTestMainClass.loginToApplicationValidateHomePage()[pri:2, instance:org.com.ObjectMainMobile.MobileTestMainClass@5d0a1059] output={null}]]]>
+                <![CDATA[[TestResult name=loginToApplicationValidateHomePage status=SUCCESS method=TestMainClass.loginToApplicationValidateHomePage()[pri:2, instance:org.com.TestPackage.TestMainClass@1a18644] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterMethod -->
-        <test-method status="PASS" signature="afterSuite()[pri:0, instance:org.com.ObjectMainMobile.MobileTestMainClass@5d0a1059]" name="afterSuite" is-config="true" duration-ms="4044" started-at="2021-06-13T05:34:32Z" finished-at="2021-06-13T05:34:36Z">
+        <test-method status="PASS" signature="afterSuite()[pri:0, instance:org.com.TestPackage.TestMainClass@1a18644]" name="afterSuite" is-config="true" duration-ms="7398" started-at="2021-06-13T15:28:24Z" finished-at="2021-06-13T15:28:31Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterSuite -->
-      </class> <!-- org.com.ObjectMainMobile.MobileTestMainClass -->
+      </class> <!-- org.com.TestPackage.TestMainClass -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

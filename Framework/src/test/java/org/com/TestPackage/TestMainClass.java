@@ -27,7 +27,7 @@ public class TestMainClass extends FrameworkUtilities implements InitCommonMetho
 	@Test(priority=0)
 	public void validateErrorMsgForInvalidPassword()
 	{
-		setDesciption("Navigate to Ecommerce Application and Verify Invalid Password");
+		setDescription("Navigate to Ecommerce Application and Verify Invalid Password");
 		loginPage.launchAndVerifyBlog(url,userName,invalidPassword);
 		loginPage.ValidateErrorMsg();
 	}
@@ -36,7 +36,7 @@ public class TestMainClass extends FrameworkUtilities implements InitCommonMetho
 	@Test(priority=1)
 	public void validateProductAddAndRemoveProductInCart()
 	{
-			setDesciption("Navigate to Ecommerce Application and Validate Add Product and Remove Product");
+			setDescription("Navigate to Ecommerce Application and Validate Add Product and Remove Product");
 			loginPage.launchAndVerifyBlog(url,userName,password);
 			homePage.validateHomeScreen();
 			homePage.addProductsToCart();
@@ -48,7 +48,7 @@ public class TestMainClass extends FrameworkUtilities implements InitCommonMetho
 	@Test(priority=2)
 	public void loginToApplicationValidateHomePage()
 	{
-		setDesciption("Navigate to Ecommerce Application Add Products and complete the Transaction Successfully");
+		setDescription("Navigate to Ecommerce Application Add Products and complete the Transaction Successfully");
 		loginPage.launchAndVerifyBlog(url,userName,password);
 		homePage.validateHomeScreen();
 		homePage.addProductsToCart();

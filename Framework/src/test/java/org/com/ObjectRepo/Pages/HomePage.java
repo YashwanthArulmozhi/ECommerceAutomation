@@ -31,6 +31,9 @@ public class HomePage extends FrameworkUtilities implements InitCommonMethods  {
 	static float product1Cost = 0;
 	static float product2Cost = 0;
 	
+	/**
+	 * Method to validate successful navigation of home screen
+	 */
 	public void validateHomeScreen()
 	{
 		try
@@ -52,6 +55,9 @@ public class HomePage extends FrameworkUtilities implements InitCommonMethods  {
 	}
 	
 	
+	/**
+	 * Method to add Products to cart as per user test data from excel
+	 */
 	public void addProductsToCart()
 	{
 		try
@@ -85,6 +91,9 @@ public class HomePage extends FrameworkUtilities implements InitCommonMethods  {
 	}
 	
 	
+	/**
+	 * Validate the total products added to cart
+	 */
 	public void validateTheTotalItemsInListAndClickShoppingCart()
 	{
 		try
@@ -106,6 +115,10 @@ public class HomePage extends FrameworkUtilities implements InitCommonMethods  {
 	}
 	
 	
+	/**
+	 * 
+	 * Method to click on Shopping cart icon
+	 */
 	public void clickShoppingCart()
 	{
 		try
