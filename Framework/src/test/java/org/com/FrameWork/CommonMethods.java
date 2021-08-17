@@ -296,7 +296,7 @@ public class CommonMethods extends BrowserAndDriverClass {
 			
 			FileInputStream fis = new FileInputStream(new File(System.getProperty("user.dir")+"\\testData\\"+excelName+".xlsx"));
 			XSSFWorkbook workbook = new XSSFWorkbook(fis);
-			XSSFSheet sheet = workbook.getSheet(readProperty("Environment"));
+			XSSFSheet sheet = workbook.getSheet(new FrameworkUtilities().getEnvironmentName());
 			XSSFRow row = sheet.getRow(0);
 			int cell =-1;
 			int cellCount = row.getPhysicalNumberOfCells();

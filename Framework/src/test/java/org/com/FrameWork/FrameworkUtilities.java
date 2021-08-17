@@ -24,6 +24,8 @@ import com.aventstack.extentreports.Status;
 import com.aventstack.extentreports.reporter.ExtentHtmlReporter;
 import com.aventstack.extentreports.reporter.configuration.Theme;
 
+import junit.framework.Assert;
+
 public class FrameworkUtilities implements InitCommonMethods 
 {
 
@@ -41,42 +43,28 @@ public static ExtentHtmlReporter htmlReporter;
 	
 	public static String path;
 	
-	String browserName;
+	String browserName = null;
 	
-	static String environmentName;
+	static String environmentName = null;
 	
-	public static String applicationName;
+	public static String applicationName = null;
 	
 	Properties properties;
 	
 	BufferedReader reader;
 	
-	public String readProperty(String keyValue)
-	{	
-		 try {
-		 reader = new BufferedReader(new FileReader(System.getProperty("user.dir")+"\\src\\test\\java\\Configuration.properties"));
-		 properties = new Properties();
-		 properties.load(reader);
-		 return properties.getProperty(keyValue).trim();
-		 }
-		 catch (Exception e) {
-			 System.out.println(e.getMessage());
-		}
-		 return null;
-	}
-	
 	public String getBrowserName()
 	{
 		try
 		{
-			browserName = readProperty("Browser");
-			if((browserName != null) && browserName.length()>1)
+			browserName = new ReadConfigurations().getPropertyValue("Browser");
+			if((browserName != null) && !browserName.trim().isEmpty())
 			{
 				return browserName;
 			}
 			else
 			{
-				browserName =null;
+				Assert.fail("Browser value is not provided");
 			}
 		}
 		 catch (Exception e) {
@@ -89,10 +77,14 @@ public static ExtentHtmlReporter htmlReporter;
 	{
 		try
 		{
-			environmentName = readProperty("Environment");
-			if(environmentName != null)
+			environmentName = new ReadConfigurations().getPropertyValue("Environment");
+			if(environmentName != null  && !environmentName.trim().isEmpty())
 			{
 				return environmentName;
+			}
+			else
+			{
+				Assert.fail("Environment is not provided");
 			}
 		}
 		 catch (Exception e) {
@@ -105,10 +97,14 @@ public static ExtentHtmlReporter htmlReporter;
 	{
 		try
 		{
-			applicationName = readProperty("ApplicationName").trim();
-			if(applicationName != null)
+			applicationName = new ReadConfigurations().getPropertyValue("ApplicationName").trim();
+			if(applicationName != null  && !applicationName.trim().isEmpty())
 			{
 				return applicationName;
+			}
+			else
+			{
+				Assert.fail("Application name is not provided");
 			}
 		}
 		 catch (Exception e) {

@@ -48,26 +48,27 @@ public class BrowserAndDriverClass extends FrameworkUtilities {
 	{
 		try
 		{
-			if(browserName.equalsIgnoreCase("chrome"))
-			{
+			switch (browserName.toLowerCase()) {
+			
+			case "chrome":
 				WebDriverManager.chromedriver().setup();
 				driver = new ChromeDriver();
 				driver.manage().window().maximize();
 				return driver;
-			}
-			else if(browserName.equalsIgnoreCase("Firefox"))
-			{
+			
+			case "firefox":
 				WebDriverManager.firefoxdriver().setup();
 				driver = new FirefoxDriver();
 				driver.manage().window().maximize();
 				return driver;
-			}	
-			else
-			{
+				
+			default:
+				
 				if(browserName==null || browserName.contains("") || !(browserName.length()>1))
 				{
 					logger.fail("Please provide Valid Browser");
 				}
+				break;
 			}
 		}
 		catch (Exception e) 
